@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        function toggleFormulas(sectionId) {
+            var formulas = document.getElementById(sectionId);
+            var button = document.getElementById('btn-' + sectionId);
+            if (formulas.style.display === 'none') {
+                formulas.style.display = 'block';
+                button.innerHTML = 'Ocultar fórmulas';
+            } else {
+                formulas.style.display = 'none';
+                button.innerHTML = 'Ver fórmulas';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Formulas algebraicas y trigonometricas</h1>
+    </header>
+    <main>
+        <!-- Sección de Álgebra -->
+        <section class="categoria">
+            <h2>1. Álgebra</h2>
+            <button id="btn-algebra" onclick="toggleFormulas('algebra')">Ver fórmulas</button>
+            <div id="algebra" style="display: none;">
+                <!-- Fórmulas de Álgebra -->
+                <div class="formula">
+                    <h3>Fórmula del binomio cuadrado</h3>
+                    <p>\[ (a + b)^2 = a^2 + 2ab + b^2 \]</p>
+                    <p><strong>Descripción:</strong> El binomio cuadrado es una fórmula algebraica utilizada para expandir el cuadrado de un binomio.</p>
+                    <p><strong>Historia:</strong> Esta fórmula se remonta a los antiguos matemáticos griegos, aunque fue formalizada por algebraistas árabes en el siglo IX.</p>
+                    <img src="fondo/images.jpg" alt="Descripción de la imagen" width="300" height="200">
+                </div>
+                <div class="formula">
+                    <h3>Fórmula de la suma de cubos</h3>
+                    <p>\[ a^3 + b^3 = (a + b)(a^2 - ab + b^2) \]</p>
+                    <p><strong>Descripción:</strong> Se usa para descomponer la suma de dos cubos en un producto de un binomio y un trinomio.</p>
+                    <p><strong>Historia:</strong> La fórmula fue conocida por matemáticos en la India y Arabia medieval, y se utiliza en la factorización.</p>
+                </div>
+                <div class="formula">
+                    <h3>Fórmula de la diferencia de cubos</h3>
+                    <p>\[ a^3 - b^3 = (a - b)(a^2 + ab + b^2) \]</p>
+                    <p><strong>Descripción:</strong> Similar a la suma de cubos, esta fórmula permite factorizar la diferencia entre dos cubos.</p>
+                    <p><strong>Historia:</strong> Fue utilizada por matemáticos antiguos como Euclides y Fibonacci.</p>
+                </div>
+                <div class="formula">
+                    <h3>Fórmula cuadrática</h3>
+                    <p>\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</p>
+                    <p><strong>Descripción:</strong> Esta es la fórmula para encontrar las soluciones de una ecuación cuadrática.</p>
+                    <p><strong>Historia:</strong> La fórmula fue descubierta por los matemáticos babilonios, aunque su formulación moderna fue atribuida a los matemáticos europeos en el siglo XVII.</p>
+                </div>
+                <div class="formula">
+                    <h3>Identidad de la suma de cuadrados</h3>
+                    <p>\[ a^2 + b^2 = (a + b)^2 - 2ab \]</p>
+                    <p><strong>Descripción:</strong> Esta identidad expresa la suma de los cuadrados de dos términos en función de su suma y producto.</p>
+                    <p><strong>Historia:</strong> Se utiliza desde la antigüedad en geometría, especialmente en la teoría de Pythagoras.</p>
+                </div>
+                <div class="formula">
+                    <h3>Fórmula de la diferencia de cuadrados</h3>
+                    <p>\[ a^2 - b^2 = (a - b)(a + b) \]</p>
+                    <p><strong>Descripción:</strong> Una fórmula básica para factorizar la diferencia de cuadrados.</p>
+                    <p><strong>Historia:</strong> Usada en matemáticas desde los tiempos de los antiguos egipcios.</p>
+                </div>
+                <div class="formula">
+                    <h3>Fórmula del trinomio cuadrado perfecto</h3>
+                    <p>\[ (a + b)^2 = a^2 + 2ab + b^2 \]</p>
+                    <p><strong>Descripción:</strong> Fórmula utilizada para expandir el cuadrado de un binomio.</p>
+                    <p><strong>Historia:</strong> También conocida por matemáticos antiguos, es un principio clave en la expansión algebraica.</p>
+                </div>
+                <div class="formula">
+                    <h3>Teorema de las raíces de la ecuación cuadrática</h3>
+                    <p>\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</p>
+                    <p><strong>Descripción:</strong> Esta fórmula permite resolver cualquier ecuación cuadrática.</p>
+                    <p><strong>Historia:</strong> Desarrollada a lo largo de los siglos por varios matemáticos como Bhaskara.</p>
+                </div>
+                <div class="formula">
+                    <h3>Fórmula general de una progresión aritmética</h3>
+                    <p>\[ a_n = a_1 + (n-1) \cdot d \]</p>
+                    <p><strong>Descripción:</strong> Fórmula para encontrar el término \(n\)-ésimo de una progresión aritmética.</p>
+                    <p><strong>Historia:</strong> La progresión aritmética fue estudiada por los matemáticos griegos antiguos y por matemáticos de la India.</p>
+                </div>
+                <div class="formula">
+                    <h3>Fórmula de la suma de una progresión aritmética</h3>
+                    <p>\[ S_n = \frac{n}{2}(a_1 + a_n) \]</p>
+                    <p><strong>Descripción:</strong> Esta fórmula calcula la suma de los primeros \(n\) términos de una progresión aritmética.</p>
+                    <p><strong>Historia:</strong> Desarrollada por los matemáticos griegos y romanos, usada en cálculos de series aritméticas.</p>
+                </div>
+                <div class="formula">
+                    <h3>Fórmula de la progresión geométrica</h3>
+                    <p>\[ a_n = a_1 \cdot r^{(n-1)} \]</p>
+                    <p><strong>Descripción:</strong> Utilizada para encontrar el \(n\)-ésimo término de una progresión geométrica.</p>
+                    <p><strong>Historia:</strong> Introducida por los matemáticos de la antigua Grecia para estudiar tasas de crecimiento.</p>
+                </div>
+                <div class="formula">
+                    <h3>Suma de los primeros n términos de una progresión geométrica</h3>
+                    <p>\[ S_n = \frac{a_1(1 - r^n)}{1 - r} \]</p>
+                    <p><strong>Descripción:</strong> Fórmula que se utiliza para calcular la suma de los primeros \(n\) términos de una progresión geométrica.</p>
+                    <p><strong>Historia:</strong> Esta fórmula ha sido parte fundamental de los estudios de series y sumas de los matemáticos medievales.</p>
+                </div>
+                <!-- Continúa con más fórmulas aquí para Álgebra -->
+            </div>
+        </section>
+
+        <!-- Sección de Trigonometría -->
+        <section class="categoria">
+            <h2>2. Trigonometría</h2>
+            <button id="btn-trigonometria" onclick="toggleFormulas('trigonometria')">Ver fórmulas</button>
+            <div id="trigonometria" style="display: none;">
+                <!-- Fórmulas de Trigonometría -->
+                <div class="formula">
+                    <h3>Identidad Fundamental</h3>
+                    <p>\[ \sin^2 \theta + \cos^2 \theta = 1 \]</p>
+                    <p><strong>Descripción:</strong> Esta es la identidad fundamental de la trigonometría.</p>
+                    <p><strong>Historia:</strong> Desarrollada por los matemáticos griegos y más tarde formalizada por Isaac Newton.</p>
+                </div>
+                <div class="formula">
+                    <h3>Teorema del seno</h3>
+                    <p>\[ \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} \]</p>
+                    <p><strong>Descripción:</strong> Establece una relación entre los lados de un triángulo y sus ángulos.</p>
+                    <p><strong>Historia:</strong> Se remonta al trabajo de los matemáticos hindúes y árabes en la Edad Media.</p>
+                </div>
+                <div class="formula">
+                    <h3>Teorema del coseno</h3>
+                    <p>\[ c^2 = a^2 + b^2 - 2ab \cos(C) \]</p>
+                    <p><strong>Descripción:</strong> Esta fórmula permite calcular un lado en un triángulo cuando se conocen los otros dos y el ángulo.</p>
+                    <p><strong>Historia:</strong> La ley de los cosenos se utilizaba por astrónomos en la antigüedad.</p>
+                </div>
+                <div class="formula">
+                    <h3>Relación tangente</h3>
+                    <p>\[ \tan \theta = \frac{\sin \theta}{\cos \theta} \]</p>
+                    <p><strong>Descripción:</strong> Relación que conecta el seno y el coseno en un triángulo rectángulo.</p>
+                    <p><strong>Historia:</strong> La tangente fue introducida por matemáticos en el siglo XVII.</p>
+                </div>
+                
+                <div class="formula">
+                    <h3>Ángulo Doble para el Seno</h3>
+                    <p>\[ \sin(2\theta) = 2 \sin \theta \cos \theta \]</p>
+                    <p><strong>Descripción:</strong> Esta fórmula se utiliza para calcular el seno de un ángulo doble.</p>
+                    <p><strong>Historia:</strong> Es una de las identidades trigonométricas más antiguas, utilizada por matemáticos árabes y europeos en el siglo XVI.</p>
+                </div>
+        
+                <div class="formula">
+                    <h3>Ángulo Doble para el Coseno</h3>
+                    <p>\[ \cos(2\theta) = \cos^2 \theta - \sin^2 \theta \]</p>
+                    <p><strong>Descripción:</strong> Permite calcular el coseno de un ángulo doble en términos de seno y coseno.</p>
+                    <p><strong>Historia:</strong> Esta fórmula fue descubierta por matemáticos europeos durante el Renacimiento.</p>
+                </div>
+        
+                <div class="formula">
+                    <h3>Ángulo Doble para la Tangente</h3>
+                    <p>\[ \tan(2\theta) = \frac{2 \tan \theta}{1 - \tan^2 \theta} \]</p>
+                    <p><strong>Descripción:</strong> Relaciona la tangente del ángulo original con la tangente del doble del ángulo.</p>
+                    <p><strong>Historia:</strong> Usada por matemáticos como Euler en sus estudios de funciones trigonométricas en el siglo XVIII.</p>
+                </div>
+        
+                <div class="formula">
+                    <h3>Identidad de la Suma de Ángulos (Seno)</h3>
+                    <p>\[ \sin(a + b) = \sin a \cos b + \cos a \sin b \]</p>
+                    <p><strong>Descripción:</strong> Expresa el seno de la suma de dos ángulos en términos de los senos y cosenos de los ángulos individuales.</p>
+                    <p><strong>Historia:</strong> Esta identidad fue establecida por matemáticos como Jean-Baptiste Fourier y Joseph-Louis Lagrange en el siglo XVIII.</p>
+                </div>
+        
+                <div class="formula">
+                    <h3>Identidad de la Suma de Ángulos (Coseno)</h3>
+                    <p>\[ \cos(a + b) = \cos a \cos b - \sin a \sin b \]</p>
+                    <p><strong>Descripción:</strong> Relaciona el coseno de la suma de dos ángulos con los cosenos y senos individuales de los mismos.</p>
+                    <p><strong>Historia:</strong> Desarrollada a partir de las tablas trigonométricas de la antigüedad, como las de Hiparco.</p>
+                </div>
+        
+                <div class="formula">
+                    <h3>Identidad de la Suma de Ángulos (Tangente)</h3>
+                    <p>\[ \tan(a + b) = \frac{\tan a + \tan b}{1 - \tan a \tan b} \]</p>
+                    <p><strong>Descripción:</strong> Expresa la tangente de la suma de dos ángulos en función de las tangentes de los ángulos individuales.</p>
+                    <p><strong>Historia:</strong> Fue estudiada en el siglo XVI como parte de la expansión de las funciones trigonométricas.</p>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
